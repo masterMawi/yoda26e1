@@ -1,5 +1,5 @@
+console.log("Maciek urodził się w ktoryms-tam roku.");
+console.log("Maciek ma ulubione powiedzonko: jakies-tam-powiedzonko");
+console.log("Maciek ma zainteresowania: jakies-zainteresowanie1, jakies-zainteresowanie2");
+console.log("Maciek prowadzi zajęcia z programowania: jeszcze-nie-podana");
 
-console.log("Maciek urodził się w 1973 roku.");
-console.log("Maciek ma ulubione powiedzonko: Carpe diem - chwytaj dzień");
-console.log("Maciek ma zainteresowania: sci-fi, programowanie, czytanie książek");
-console.log("Maciek prowadzi zajęcia z programowania: true");
