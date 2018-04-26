@@ -12,6 +12,15 @@
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node.cmd",
       "cwd": "${workspaceRoot}",
       "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Current File",
+      "program": "${file}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node.cmd",
+      "cwd": "${workspaceRoot}",
+      "sourceMaps": true
     }
   ]
 }
