@@ -1,13 +1,19 @@
 
-let imieOsoby;             // deklaracja zmiennej o nazwie imieOsoby
-let rokUrodzeniaOsoby;
+let imieOsoby;             // deklaracja zmiennej na imie osoby
+let rokUrodzeniaOsoby;     // deklaracja zmiennej na rok urodzenia osoby
+let opiszOsobe;            // deklaracja zmiennej na funkcję opisującą osobę
+
+// funkcja opisująca osobę
+opiszOsobe = () => {
+  console.log(imieOsoby + " urodził(a) się w " + rokUrodzeniaOsoby + " roku.");
+  console.log(imieOsoby + " ma ulubione powiedzonko: jakies-tam-powiedzonko");
+  console.log(imieOsoby + " ma zainteresowania: jakies-zainteresowanie1, jakies-zainteresowanie2");
+  console.log(imieOsoby + " prowadzi zajęcia z programowania: jeszcze-nie-podana");
+}
+
 imieOsoby = "Maciek";      // nadanie zmiennej wartości "Maciek"
 rokUrodzeniaOsoby = 1973;
-
-console.log(imieOsoby + " urodził(a) się w " + rokUrodzeniaOsoby + " roku.");
-console.log(imieOsoby + " ma ulubione powiedzonko: jakies-tam-powiedzonko");
-console.log(imieOsoby + " ma zainteresowania: jakies-zainteresowanie1, jakies-zainteresowanie2");
-console.log(imieOsoby + " prowadzi zajęcia z programowania: jeszcze-nie-podana");
+opiszOsobe();
 
 // druga osoba
 imieOsoby = "Tosia";      // nadanie zmiennej wartości "Maciek"
