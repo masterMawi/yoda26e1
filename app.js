@@ -17,4 +17,5 @@ opiszOsobe();
 
 // druga osoba
 imieOsoby = "Tosia";      // nadanie zmiennej wartości "Tosia"
+rokUrodzeniaOsoby = 2007;
 opiszOsobe();
