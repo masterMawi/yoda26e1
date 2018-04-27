@@ -1,5 +1,3 @@
-
-let imieOsoby;             // deklaracja zmiennej o nazwie imieOsoby
 let opiszOsobe;            // deklaracja zmiennej na funkcję opisującą osobę
 
 // funkcja opisująca osobę
@@ -10,8 +8,5 @@ opiszOsobe = (imie) => {
   console.log(imie + " prowadzi zajęcia z programowania: jeszcze-nie-podana");
 }
 
-imieOsoby = "Maciek";      // nadanie zmiennej wartości "Maciek"
-opiszOsobe(imieOsoby);
-
-// druga osoba
+opiszOsobe("Maciek");
 opiszOsobe("Tosia");
