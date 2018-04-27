@@ -7,9 +7,8 @@ const opiszOsobe = (imie) => {
 }
 
 // funkcja, która opisze dwie osoby
-const opiszDwieOsoby = (imie1, imie2) => {
-  opiszOsobe(imie1);
-  opiszOsobe(imie2);
+const opiszListeOsob = (listaImion) => {
+  listaImion.map(opiszOsobe);
 }
 
-opiszDwieOsoby("Maciek", "Tosia");
+opiszListeOsob(["Maciek", "Tosia"]);
