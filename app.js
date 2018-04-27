@@ -6,5 +6,10 @@ const opiszOsobe = (imie) => {
   console.log(imie + " prowadzi zajęcia z programowania: jeszcze-nie-podana");
 }
 
-opiszOsobe("Maciek");
-opiszOsobe("Tosia");
+// funkcja, która opisze dwie osoby
+const opiszDwieOsoby = (imie1, imie2) => {
+  opiszOsobe(imie1);
+  opiszOsobe(imie2);
+}
+
+opiszDwieOsoby("Maciek", "Tosia");
