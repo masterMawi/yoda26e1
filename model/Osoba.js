@@ -19,14 +19,12 @@ class Osoba {
   opowiedzOZwierzakach() {
     if(this.listaZwierzakow) {
       console.log(`  Mam zwierzaków ${this.listaZwierzakow.length}. Są to:`)
-      this.listaZwierzakow.forEach(this.opowiedzOPojedynczymZwierzaku);
+      this.listaZwierzakow.forEach((zwierzak, indeks) => {
+        console.log(`  ${indeks+1}: ${zwierzak.gatunek} i wabi się ${zwierzak.jakSieWabi}`);
+      });
     }
     else
       console.log(`  Nie mam żadnego zwierzaka`);
-  }
-
-  opowiedzOPojedynczymZwierzaku(zwierzak, indeks) {
-    console.log(`  ${indeks+1}: ${zwierzak.gatunek} i wabi się ${zwierzak.jakSieWabi}`);
   }
 
   // metoda oblicza aktualny wiek osoby
