@@ -20,5 +20,7 @@ class Osoba {
   }
 }
 
+export default Osoba;
+
 const osoba1 = new Osoba("Maciek", 1973);
 osoba1.przedstawSie();
