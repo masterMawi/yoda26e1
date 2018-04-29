@@ -37,6 +37,7 @@ class Osoba {
 
 export default Osoba;
 
+/*
 const osoba1 = new Osoba("Maciek", 1973);
 osoba1.przedstawSie();
 
@@ -49,3 +50,4 @@ const zwierzak3_2 = new Zwierzak("Nemo", "rybka", "bul-bul");
 const zwierzak3_3 = new Zwierzak("Świergol", "papuga", "daj krakersa");
 const osoba3 = new Osoba("Julia", 2006, [zwierzak3_1, zwierzak3_2, zwierzak3_3]);
 osoba3.przedstawSie();
+*/
