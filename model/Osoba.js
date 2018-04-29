@@ -9,7 +9,14 @@ class Osoba {
   }
 
   przedstawSie() {
-    console.log(`Hej, jestem ${this.imie} i urodziłam/urodziłem się w ${this.rokUrodzenia} roku`);
+    console.log(`Hej, jestem ${this.imie} i mam ${this.wiek()} lat`);
+  }
+
+  // metoda oblicza aktualny wiek osoby
+  wiek() {
+    let dataBiezaca = new Date();
+    let rokBiezacy =  dataBiezaca.getFullYear();
+    return rokBiezacy - this.rokUrodzenia; 
   }
 }
 
