@@ -13,5 +13,7 @@ class Zwierzak {
   }
 }
 
-let zwierzak1 = new Zwierzak("Tuptuś", "żółw", "tup-tup");
-zwierzak1.dajGlos();
+export default Zwierzak;
+
+//let zwierzak1 = new Zwierzak("Tuptuś", "żółw", "tup-tup");
+//zwierzak1.dajGlos();
