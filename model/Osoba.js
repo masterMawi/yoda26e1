@@ -5,18 +5,28 @@ import Zwierzak from './Zwierzak';
   wyświetlać w aplikacji
 */
 class Osoba {
-  constructor(imie, rokUrodzenia, zwierzak){
+  constructor(imie, rokUrodzenia, listaZwierzakow){
     this.imie = imie;
     this.rokUrodzenia = rokUrodzenia;
-    this.zwierzak = zwierzak;
+    this.listaZwierzakow= listaZwierzakow;
   }
 
   przedstawSie() {
     console.log(`Hej, jestem ${this.imie} i mam ${this.wiek()} lat`);
-    if(this.zwierzak)
-      console.log(`  Mam zwierzaka. Jest to ${this.zwierzak.gatunek} i wabi się ${this.zwierzak.jakSieWabi}`);
+    this.opowiedzOZwierzakach();
+  }
+
+  opowiedzOZwierzakach() {
+    if(this.listaZwierzakow) {
+      console.log(`  Mam zwierzaków ${this.listaZwierzakow.length}. Są to:`)
+      this.listaZwierzakow.forEach(this.opowiedzOPojedynczymZwierzaku);
+    }
     else
-      console.log(`  Nie mam zwierzaka`);
+      console.log(`  Nie mam żadnego zwierzaka`);
+  }
+
+  opowiedzOPojedynczymZwierzaku(zwierzak, indeks) {
+    console.log(`  ${indeks+1}: ${zwierzak.gatunek} i wabi się ${zwierzak.jakSieWabi}`);
   }
 
   // metoda oblicza aktualny wiek osoby
@@ -32,6 +42,12 @@ export default Osoba;
 const osoba1 = new Osoba("Maciek", 1973);
 osoba1.przedstawSie();
 
-const zwierzak1 = new Zwierzak("Mruczuś", "kot", "miau");
-const osoba2 = new Osoba("Zuzia", 2007, zwierzak1);
+const zwierzak2_1 = new Zwierzak("Mruczuś", "kot", "miau");
+const osoba2 = new Osoba("Zuzia", 2007, [zwierzak2_1]);
 osoba2.przedstawSie();
+
+const zwierzak3_1 = new Zwierzak("Sierściuch", "kot", "miauuuu");
+const zwierzak3_2 = new Zwierzak("Nemo", "rybka", "bul-bul");
+const zwierzak3_3 = new Zwierzak("Świergol", "papuga", "daj krakersa");
+const osoba3 = new Osoba("Julia", 2006, [zwierzak3_1, zwierzak3_2, zwierzak3_3]);
+osoba3.przedstawSie();
