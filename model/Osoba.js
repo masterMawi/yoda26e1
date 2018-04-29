@@ -17,7 +17,7 @@ class Osoba {
   }
 
   opowiedzOZwierzakach() {
-    if(this.listaZwierzakow) {
+    if(this.listaZwierzakow && this.listaZwierzakow.length > 0) {
       console.log(`  Mam zwierzaków ${this.listaZwierzakow.length}. Są to:`)
       this.listaZwierzakow.forEach((zwierzak, indeks) => {
         console.log(`  ${indeks+1}: ${zwierzak.gatunek} i wabi się ${zwierzak.jakSieWabi}`);
