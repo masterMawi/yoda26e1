@@ -5,7 +5,7 @@ import Zwierzak from './Zwierzak';
   wyświetlać w aplikacji
 */
 class Osoba {
-  constructor(imie, rokUrodzenia, listaZwierzakow){
+  constructor(imie, rokUrodzenia, listaZwierzakow = []){
     this.imie = imie;
     this.rokUrodzenia = rokUrodzenia;
     this.listaZwierzakow= listaZwierzakow;
